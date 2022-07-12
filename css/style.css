@@ -28,7 +28,7 @@ header {
 }
 
 .form_description {
-    font-size: 1.5em;
+    font-size: 30px;
     margin-top: 25px;
 }
 
@@ -49,13 +49,9 @@ main {
 fieldset {
     border-radius: 10px;
     padding:10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-table td {
-    vertical-align: middle;
-    height:50px;
-}
 
 #personal_info {
     margin-top: 30px;
@@ -64,47 +60,68 @@ table td {
 input {
     border-radius: 5px;
     border:0px;
-    height:30px;
+    height:35px;
     margin-left: 15px;
     padding-left: 5px;
+    width: 75%;
+    font-size: 18px;
 }
 
 legend {
     margin-left: 20px;
 }
 
-#first_name {
-    margin-top: 10px;
+.personal_info_container {
+    display: flex;
 }
 
-#user {
-    display: inline;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    background-color: #929292;
-    padding:5px;
-    margin-right: 0;
-    margin-left: 15px;
-}
-#username {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    margin-left:0;
+#atmark {
+    display:inline;
+    padding-top: 5px;
+    padding-left: 3px;
+    padding-right:3px;
+    padding-bottom:5px;
+    background-color: #656566;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 13px;
+    
 }
 
-#country-selection {
-    font-size:16px;
-    font-family: arial,sans-serif;
-    color:#0d023b;
-    height:30px;
+select {
+    margin-left: 14px;
+    width: 78%;
+    height:35px;
     border-radius: 5px;
-    margin-left: 15px;
+    font-size: 16px;
+}
+.personal_container {
+    display: flex;
 }
 
 
-#zipcode_field {
-    padding-left: 10px;
+#username {
+    margin:0;
+    height:35px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width:65%;
 }
+
+.personal_container {
+    width: 500px;
+}
+
+.data {
+    width:150px;
+    margin:10px;
+}
+
+.input_data {
+    width:300px;
+}
+
+
 
 .checkbox_container {
     display: flex;
@@ -125,7 +142,7 @@ legend {
 }
 
 .payment_method {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -206,4 +223,77 @@ footer {
 
 .footer_disclaimer a:hover {
     color:#4d5188;
+}
+
+@media (min-width:350px) and (max-width:500px) {
+
+    .container{
+        width:100%;
+        align-items:center;
+
+    }
+
+    fieldset {
+        font-size: 15px;
+        padding:0px;
+        width:100%;
+    }
+
+    .form_description {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+ 
+
+    .personal_container {
+        width:100%
+    }
+
+    #atmark {
+        display:none;
+    }
+
+    #username {
+        border-radius: 5px;;
+        margin-left: 15px;
+    }
+    
+    .data {
+        width:30%;
+        margin:10px;
+    }
+    
+    .input_data {
+        width:70%
+    }
+
+    .payment_options {
+        font-size: 15px;
+    }
+
+
+    .text_container {
+        font-size: 15px;
+    }
+    .payment_method {
+        align-self: flex-start;
+        font-size: 15px;
+        
+    }
+
+    .card_info_container {
+        flex-direction: column;
+    }
+
+    .card_info {
+        padding-left: 0px;
+        margin-top:15px;
+        font-size: 15px;
+
+    }
+
+    .footer_disclaimer {
+        font-size: 15px;
+    }
+
 }

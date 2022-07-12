@@ -35,63 +35,60 @@
             <form id="personal_info">
             <fieldset>
                 <legend> Personal Information </legend>
-
-                <table>
-                    <tr>
-                        <td>
+                    <div class="personal_container">
+                        <div class="data">
                             Name:
-                        </td>
-                        <td>
-                            <input type="text" name="first_name" id="first_name" size="30" placeholder="Jack"> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Last name:
-                        </td>
-                        <td>
-                            <input type="text" name="last_name" id="last_name" size="30" placeholder="Sparrow">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                        </div>
+                        <div class="input_data">
+                            <input type="text" name="name" id="name">
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
+                            Last name
+                        </div>
+                        <div class="input_data">
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
                             Username:
-                        </td>
-                        <td>
-                            <div id="user">@</div><input type="text" name="username" id="username" size="20" placeholder="jacksparow1690">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                        </div>
+                        <div class="input_data">
+                            <div id="atmark">@</div><input type="text" name="username" id="username" >
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
                             E-mail:
-                        </td>
-                        <td>
-                            <input type="email" name="email" id="email" placeholder="jacksparrow@example.com" size="25">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Address: 
-                        </td>
-                        <td>
-                            <input type="text" name="address" placeholder="1234 Main St" size="45">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Address 2: 
-                        </td>
-                        <td>
-                            <input type="text" name="address" placeholder="Apartment or suite or boat name" size="45">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
+                        </div>
+                        <div class="input_data">
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
+                            Address:
+                        </div>
+                        <div class="input_data">
+                            <input type="text" name="address" id="address">
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
+                            Address 2:
+                        </div>
+                        <div class="input_data">
+                            <input type="text" name="address2" id="address2">
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
                             Country:
-                        </td>
-                        <td>
-                            <select id="country-selection">
+                        </div>
+                        <div class="input_data">
+                            <select>
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -121,7 +118,7 @@
                                 <option value="Bosnia and Herzegowina">Bosnia and Herzegowina</option>
                                 <option value="Botswana">Botswana</option>
                                 <option value="Bouvet Island">Bouvet Island</option>
-                                <option value="Brazil" selected>Brazil</option>
+                                <option value="Brazil" selected >Brazil</option>
                                 <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
                                 <option value="Brunei Darussalam">Brunei Darussalam</option>
                                 <option value="Bulgaria">Bulgaria</option>
@@ -332,29 +329,32 @@
                                 <option value="Zambia">Zambia</option>
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
-                    </td>
-                    </tr>
-                    <tr>
-                        <td>
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
                             City:
-                        </td>
-                        <td>
-                            <input type="text" name="city" id="city" size="30">
-                        </td>
-                        <td>
-                            State/Province:
-                        </td>
-                        <td>
+                        </div>
+                        <div class="input_data">
+                            <input type="text" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
+                            State/Province
+                        </div>
+                        <div class="input_data">
                             <input type="text" name="state" id="state">
-                        </td>
-                        <td id="zipcode_field">
-                            Zip Code:
-                        </td>
-                        <td>
-                            <input type="text" name="zip" id="zip">
-                        </td>
-                    </tr>                
-                </table>                        
+                        </div>
+                    </div>
+                    <div class="personal_container">
+                        <div class="data">
+                            Zip code:
+                        </div>
+                        <div class="input_data">
+                            <input type="text" name="zipcode" id="zipcode">
+                        </div>
+                    </div>
             </fieldset>
         </form>
         <div class="horizontalbar"></div>
@@ -412,17 +412,15 @@
                         <span class="card_title">Name on card:</span><br>
                         <input type="text" name="card_name" id="card_name" size="30">
                     </div>
-                    <div class="card_number">
+                    <div class="card_info">
                         <span class="card_title">Card Number:</span> <br>
                         <input type="text" name="card_number" id="card_number" size="25" placeholder="XXXX XXXX XXXX XXXX">
                     </div>
-                </div>
-                <div class="card_info_container">
                     <div class="card_info">
                         <span class="card_title">Expiration Date</span><br>
                         <input type="date" name="expiration_date" id="expiration_date">
                     </div>
-                    <div class="card_number">
+                    <div class="card_info">
                         <span class="card_title">CVV</span> <br>
                         <input type="password" name="cvv" id="cvv" size="5">
                     </div>
